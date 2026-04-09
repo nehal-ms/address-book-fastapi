@@ -1,6 +1,6 @@
 FastAPI Address Book Assignment
 
-This project is a simple Address Book API built using FastAPI and SQLite.
+This project related to the simple Address Book API built using FastAPI and SQLite.
 
 How to run the application:
 

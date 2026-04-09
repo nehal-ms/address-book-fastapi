@@ -1,7 +1,7 @@
 import math
 
 def haversine(lat1, lon1, lat2, lon2):
-    R = 6371  # Earth radius in KM
+    R = 6371  # Earth radius in KMs
 
     dlat = math.radians(lat2 - lat1)
     dlon = math.radians(lon2 - lon1)

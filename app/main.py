@@ -28,10 +28,10 @@ def create_address(data: AddressCreate, db: Session = Depends(get_db)):
 def delete_address(address_id: int, db: Session = Depends(get_db)):
     address = db.query(Address).filter(Address.id == address_id).first()
     if not address:
-        raise HTTPException(status_code=404, detail="Address not found")
+        raise HTTPException(status_code=404, detail="Address not found.")
     db.delete(address)
     db.commit()
-    return {"message": "Address deleted"}
+    return {"message": "Address deleted."}
 
 @app.get("/addresses/nearby")
 def nearby_addresses(lat: float, lon: float, distance: float, db: Session = Depends(get_db)):
